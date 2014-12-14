@@ -2,7 +2,8 @@
 ## functions do
 
 ## Write a short comment describing this function
-
+## This function return a list, including 4 functions
+## which could set matrix, get matrix, set solve, get solve
 makeCacheMatrix <- function(x = matrix()) {
         s <- NULL
         set <- function(y) {
@@ -19,7 +20,9 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
-
+## This function return the solve of a cacheMatrix
+## if the solve was computed, it will return soon
+## otherwise it will compute it, then return
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
         s <- x$getsolve()
